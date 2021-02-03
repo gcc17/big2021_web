@@ -298,8 +298,8 @@ ulx li {
 .navbar-custom {
   border: 0;
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   background-color: #000;
   -webkit-transition: all 0.2s linear 0s;
           transition: all 0.2s linear 0s;
@@ -310,7 +310,7 @@ ulx li {
 .navbar-custom .navbar-nav > li > a {
   color: #fff;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   border-bottom: 1px solid transparent;
 }
