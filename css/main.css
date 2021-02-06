@@ -350,6 +350,7 @@ ulx li {
   font-size: 20px;
   font-weight: 700;
   margin-right: 5px;
+  margin-left: 10px;
   /* letter-spacing: 3px; */
   /*text-transform: uppercase;*/
 }
