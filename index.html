@@ -99,7 +99,7 @@
     </div>
 </header>
 
-<section id="about" class="section about" style="display: none;">
+<section id="about" class="section about" style="display: block;">
     <div class="container">
         <div class="row">
             <!--
@@ -137,7 +137,7 @@
     </div><!-- /.container -->
 </section>
 
-<section id="program" class="section facts" style="display: none;">
+<section id="program" class="section program" style="display: none;">
     <div class="container">
         <!--<div class="row">
             <div class="col-md-12">
@@ -300,7 +300,7 @@
         </p></div>
 </section>
 
-<section id="committees" class="section faq" style="display: none;">
+<section id="committees" class="section committees" style="display: none;">
     <div class="container">
         <!--<div class="row">
             <div class="col-md-12">
@@ -416,7 +416,7 @@
     </div>
 </section>
 
-<section id="authors" class="section registration" style="display: none;">
+<section id="authors" class="section authors" style="display: none;">
     <div class="container">
         <p>TBA</p>
     </div>
@@ -507,9 +507,12 @@
     <div class="container">
         <h3>Registration</h3>
         For conference registion, please follow the following instructions:
-        <a href="./BIGCOM 2021 English Registration.doc" download="BIGCOM 2021 Chinese Registration.docx">English version,</a>
+        <a href="./BIGCOM%202021%20English%20Registration.doc" download="BIGCOM 2021 English Registration.doc">English version,</a>
         &nbsp;
-        <a href="BIGCOM 2021 Chinese Registration.docx" download="BIGCOM 2021 English Registration.doc">Chinese version.</a>
+        <a href="BIGCOM%202021%20Chinese%20Registration.docx" download="BIGCOM 2021 Chinese Registration.docx">Chinese version</a>.
+
+        <br>
+        Download the conference notification <a href="./BIGCOM%202021会议通知.pdf" download="BIGCOM 2021会议通知.pdf">here(in Chinese)</a>
 
     </div>
 </section>
@@ -606,15 +609,77 @@
 <script type="text/javascript">
     function hidealldivs (){
         about.style.display = 'none';
+        committees.style.display = 'none';
         cfp.style.display='none';
-        faq.style.display='none';
-        registration.style.display='none';
-        sponsorships.style.display='none';
+        program.style.display='none';
         keynote.style.display='none';
         venue.style.display='none';
         submit.style.display='none';
         registration.style.display='none';
+        sponsorships.style.display='none';
+        authors.style.display='none';
     }
+
+    setTimeout(function() {
+    if(location.href.substring(location.href.indexOf("#")+1) == 'about') {
+    about.style.display='block'; program.style.display='none'; committees.style.display='none'; cfp.style.display='none'; authors.style.display='none'; sponsorships.style.display='none'; keynote.style.display='none'; venue.style.display='none'; submit.style.display='none'; registration.style.display='none';
+    }
+    }, 100)
+
+    setTimeout(function() {
+    if(location.href.substring(location.href.indexOf("#")+1) == 'program') {
+    about.style.display='none'; program.style.display='block'; committees.style.display='none'; cfp.style.display='none'; authors.style.display='none'; sponsorships.style.display='none'; keynote.style.display='none'; venue.style.display='none'; submit.style.display='none'; registration.style.display='none';
+    }
+    }, 100)
+
+    setTimeout(function() {
+    if(location.href.substring(location.href.indexOf("#")+1) == 'committees') {
+    about.style.display='none'; program.style.display='none'; committees.style.display='block'; cfp.style.display='none'; authors.style.display='none'; sponsorships.style.display='none'; keynote.style.display='none'; venue.style.display='none'; submit.style.display='none'; registration.style.display='none';
+    }
+    }, 100)
+
+    setTimeout(function() {
+    if(location.href.substring(location.href.indexOf("#")+1) == 'cfp') {
+    about.style.display='none'; program.style.display='none'; committees.style.display='none'; cfp.style.display='block'; authors.style.display='none'; sponsorships.style.display='none'; keynote.style.display='none'; venue.style.display='none'; submit.style.display='none'; registration.style.display='none';
+    }
+    }, 100)
+
+    setTimeout(function() {
+    if(location.href.substring(location.href.indexOf("#")+1) == 'authors') {
+    about.style.display='none'; program.style.display='none'; committees.style.display='none'; cfp.style.display='none'; authors.style.display='block'; sponsorships.style.display='none'; keynote.style.display='none'; venue.style.display='none'; submit.style.display='none'; registration.style.display='none';
+    }
+    }, 100)
+
+    setTimeout(function() {
+    if(location.href.substring(location.href.indexOf("#")+1) == 'sponsorships') {
+    about.style.display='none'; program.style.display='none'; committees.style.display='none'; cfp.style.display='none'; authors.style.display='none'; sponsorships.style.display='block'; keynote.style.display='none'; venue.style.display='none'; submit.style.display='none'; registration.style.display='none';
+    }
+    }, 100)
+
+    setTimeout(function() {
+    if(location.href.substring(location.href.indexOf("#")+1) == 'keynote') {
+    about.style.display='none'; program.style.display='none'; committees.style.display='none'; cfp.style.display='none'; authors.style.display='none'; sponsorships.style.display='none'; keynote.style.display='block'; venue.style.display='none'; submit.style.display='none'; registration.style.display='none';
+    }
+    }, 100)
+
+    setTimeout(function() {
+    if(location.href.substring(location.href.indexOf("#")+1) == 'venue') {
+    about.style.display='none'; program.style.display='none'; committees.style.display='none'; cfp.style.display='none'; authors.style.display='none'; sponsorships.style.display='none'; keynote.style.display='none'; venue.style.display='block'; submit.style.display='none'; registration.style.display='none';
+    }
+    }, 100)
+
+    setTimeout(function() {
+    if(location.href.substring(location.href.indexOf("#")+1) == 'submit') {
+    about.style.display='none'; program.style.display='none'; committees.style.display='none'; cfp.style.display='none'; authors.style.display='none'; sponsorships.style.display='none'; keynote.style.display='none'; venue.style.display='none'; submit.style.display='block'; registration.style.display='none';
+    }
+    }, 100)
+
+    setTimeout(function() {
+    if(location.href.substring(location.href.indexOf("#")+1) == 'registration') {
+    about.style.display='none'; program.style.display='none'; committees.style.display='none'; cfp.style.display='none'; authors.style.display='none'; sponsorships.style.display='none'; keynote.style.display='none'; venue.style.display='none'; submit.style.display='none'; registration.style.display='block';
+    }
+    }, 100)
+    
 </script>
 
 <script src="jquery/dist/jquery.min.js"></script>
